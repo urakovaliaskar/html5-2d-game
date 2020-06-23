@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.kangal9k.blog",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "monolith",
+    "baseName": "blog",
+    "packageName": "com.kangal9k.blog",
+    "packageFolder": "com/kangal9k/blog",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NDFlMDczMTgxNWZkMzlkNGY4M2Q3MDliYmE5NDUzZjQzNjEyYzEwZDA2N2IyYzE5NjhkNTc5ODRlZWVlYmUyMTU2NDNkNDZkZDc2MTliOWI1YTdlM2NhYmFlZjYwNzU4Y2ZjZGQzYzVjMmFhZTZiYzEwN2NiMDQ2YmY4MDY2ZTE=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1592908390399,
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "ru"],
+    "blueprints": []
+  }
+}
