@@ -1,0 +1,53 @@
+{
+  "name": "istack",
+  "version": "1.0.0",
+  "description": "express app for managing queue of space shots",
+  "main": "index.js",
+  "author": "Urakov Aliaskar",
+  "license": "MIT",
+  "scripts": {
+    "serve": "cross-env NODE_ENV=development nodemon --exec babel-node -- src/server.js",
+    "knex:make": "cross-env NODE_ENV=development knex migrate:make",
+    "knex:migrate": "cross-env NODE_ENV=development knex migrate:latest",
+    "knex:rollback": "cross-env NODE_ENV=development knex migrate:rollback",
+    "knex:seed": "cross-env NODE_ENV=development knex seed:run",
+    "knex:makeseed": "cross-env NODE_ENV=development knex seed:make",
+    "test": "cross-env NODE_ENV=development jest --testTimeout=10000 --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.1",
+    "objection": "^2.2.0",
+    "objection-password": "^2.0.0",
+    "pg": "^8.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.3.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.1.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "superagent-defaults": "^0.1.14",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "coverageReporters": [
+      "text-summary"
+    ]
+  }
+}
